@@ -7,12 +7,14 @@
 1. km2m()
 <br>_Kilometer (km) to meter (m)_</br>
 ```
-    from measureunit.units import Length
-    value = Length.km2m(2)
+from measureunit.units import Length
+value = Length.km2m(2)
 ```
 2. m2km()
+<br>_Meter (m) to kilometer (km)_</br>
 ```
-    Meter (m) to kilometer (km)
+from measureunit.units import Length
+value = Length.m2km(2)
 ```
 3. hm2m()
 ```
