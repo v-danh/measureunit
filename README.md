@@ -2,12 +2,13 @@
 
 ## Length
 
-```
-    Converting the measurement units of Length
-```
+*Converting the measurement units of Length*
+
 1. km2m()
+_Kilometer (km) to meter (m)_
 ```
-    Kilometer (km) to meter (m)
+    from measureunit.units import Length
+    value = Length.km2m(2)
 ```
 2. m2km()
 ```
@@ -64,11 +65,8 @@
 
 ## Weight and Mass
 
-```Converting the measurement units of Weight and Mass
-```
+*Converting the measurement units of Weight and Mass*
 
 ## Temperature
 
-```
-    Converting the measurement units of Temperature
-```
+*Converting the measurement units of Temperature*
