@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/measureunit.egg-info/PKG-INFO
+src/measureunit.egg-info/SOURCES.txt
+src/measureunit.egg-info/dependency_links.txt
+src/measureunit.egg-info/requires.txt
+src/measureunit.egg-info/top_level.txt
