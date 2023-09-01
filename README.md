@@ -134,34 +134,34 @@ value = Length.cm2in(2)
 
 *Converting the measurement units of Weight and Mass*
 
-**1. t2kg** <br>
+**1. t2kg()** <br>
 Ton (t) to kilogram (kg) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.t2kg(2)
 ```
-**2. kg2t** <br>
+**2. kg2t()** <br>
 Kilogram (kg) to ton (t) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.kg2t(2)
 ```
 
-**3. kg2g** <br>
+**3. kg2g()** <br>
 Kilogram (kg) to gram (g) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.kg2g(2)
 ```
 
-**4. g2kg** <br>
+**4. g2kg()** <br>
 Gram (g) to kilogram (kg) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.g2kg(2)
 ```
 
-**5. kg2hg** <br>
+**5. kg2hg()** <br>
 Kilogram (kg) to hectogram (hg) <br>
 ```
 from measureunit.units import WeightMass
@@ -189,42 +189,42 @@ from measureunit.units import WeightMass
 value = WeightMass.dag2kg()
 ```
 
-**9. hg2g** <br>
+**9. hg2g()** <br>
 Hectogram (hg) to gram (g) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.hg2g(2)
 ```
 
-**10. g2hg** <br>
+**10. g2hg()** <br>
 Gram (g) to hectogram (hg) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.g2hg(2)
 ```
 
-**11. dag2g** <br>
+**11. dag2g()** <br>
 Dekagram (dag) to gram (g) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.dag2g(2)
 ```
 
-**12. g2dag** <br>
+**12. g2dag()** <br>
 Gram (g) to dekagram (dag) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.g2dag(2)
 ```
 
-**13. u2kg** <br>
+**13. u2kg()** <br>
 Atomic mass unit (u) to kilogram (kg) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.u2kg(2)
 ```
 
-**14. kg2u** <br>
+**14. kg2u()** <br>
 Kilogram (kg) to atomic mass unit (u) <br>
 ```
 from measureunit.units import WeightMass
