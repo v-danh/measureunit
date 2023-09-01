@@ -43,7 +43,63 @@ class Length:
         
         except Exception as e:
             logging.info(f"An error occurred: {e}")
-            
+    
+    def km2hm(kilometer: float):
+        """
+            Kilometer (km) to hectometer (hm)
+        """
+        try:
+            if isinstance(kilometer, (int, float)):
+                hectometer = kilometer * 10
+                logging.info(hectometer)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def hm2km(hectometer: float):
+        """
+            Hectometer (hm) to kilometer (km)
+        """
+        try:
+            if isinstance(hectometer, (int, float)):
+                kilometer = hectometer / 10
+                logging.info(kilometer)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def km2dam(kilometer: float):
+        """
+            Kilometer (km) to decameter (dam)
+        """
+        try:
+            if isinstance(kilometer, (int, float)):
+                decameter = kilometer * 100
+                logging.info(decameter)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def dam2km(decameter: float):
+        """
+            Decameter (dam) to kilometer (km)
+        """
+        try:
+            if isinstance(decameter, (int, float)):
+                kilometer = decameter / 100
+                logging.info(kilometer)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
     def hm2m(hectometer: float):
         """
             Hectometer (hm) to meter (m)
@@ -215,6 +271,10 @@ class Length:
     def main() -> None:
         Length.km2m()
         Length.m2km()
+        Length.km2hm()
+        Length.hm2km()
+        Length.km2dam()
+        Length.dam2km()
         Length.hm2m()
         Length.m2hm()
         Length.dam2m()
@@ -288,6 +348,62 @@ class WeightMass:
         try:
             if isinstance(gram, (int, float)):
                 kilogram = gram / 1000
+                logging.info(kilogram)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def kg2hg(kilogram: float):
+        """
+            Kilogram (kg) to hectogram (hg)
+        """
+        try:
+            if isinstance(kilogram, (int, float)):
+                hectogram = kilogram * 10
+                logging.info(hectogram)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def hg2kg(hectogram: float):
+        """
+            Hectogram (hg) to kilogram (kg)
+        """
+        try:
+            if isinstance(hectogram, (int, float)):
+                kilogram = hectogram / 10
+                logging.info(kilogram)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def kg2dag(kilogram: float):
+        """
+            Kilogram (kg) to dekagram (dag)
+        """
+        try:
+            if isinstance(kilogram, (int, float)):
+                dekagram = kilogram * 100
+                logging.info(dekagram)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
+    def dag2kg(dekagram: float):
+        """
+            Dekagram (dag) to kilogram (kg)
+        """
+        try:
+            if isinstance(dekagram, (int, float)):
+                kilogram = dekagram / 100
                 logging.info(kilogram)
             else:
                 raise ValueError('The value must be an integer.')
@@ -384,6 +500,10 @@ class WeightMass:
         WeightMass.kg2g()
         WeightMass.kg2g()
         WeightMass.g2kg()
+        WeightMass.kg2hg()
+        WeightMass.hg2kg()
+        WeightMass.kg2dag()
+        WeightMass.dag2kg()
         WeightMass.hg2g()
         WeightMass.g2hg()
         WeightMass.dag2g()
