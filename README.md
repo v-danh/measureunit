@@ -273,6 +273,6 @@ degree = Temperature.F2K(20)
 **6. K2F()** <br>
 Kelvin (K) to Fahrenheit (°F) <br>
 ```
-rom measureunit.units import Temperature
+from measureunit.units import Temperature
 degree = Temperature.K2F(20)
 ```
