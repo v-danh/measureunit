@@ -2,10 +2,10 @@ from setuptools import find_packages, setup
 
 with open('README.md', 'r') as f:
     long_description = f.read()
-    
+
 setup(
     name='measureunit',
-    version='0.0.1',
+    version='0.0.1-r2',
     description='A Python library of the measurement conversion',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
