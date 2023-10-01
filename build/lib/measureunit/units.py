@@ -297,6 +297,8 @@ class WeightMass:
     hectogram: float
     dekagram: float
     gram: float
+    pound: float
+    ounce: float
     u: float
     
     def t2kg(ton: float):
@@ -466,7 +468,35 @@ class WeightMass:
         
         except Exception as e:
             logging.info(f"An error occurred: {e}")
-
+    
+    def lb2oz(pound: float):
+        """
+            Pound (lb) to ounce (oz)
+        """
+        try:
+            if isinstance(pound, (int, float)):
+                ounce = pound * 16
+                logging.info(ounce)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+            
+    def oz2lb(ounce: float):
+        """
+            Ounce (oz) to pound (lb)
+        """
+        try:
+            if isinstance(ounce, (int, float)):
+                pound = ounce * 0.0625
+                logging.info(pound)
+            else:
+                raise ValueError('The value must be an integer.')
+        
+        except Exception as e:
+            logging.info(f"An error occurred: {e}")
+    
     def u2kg(u: float):
         """
             Atomic mass unit (u) to kilogram (kg)
@@ -508,6 +538,8 @@ class WeightMass:
         WeightMass.g2hg()
         WeightMass.dag2g()
         WeightMass.g2dag()
+        WeightMass.lb2oz()
+        WeightMass.oz2lb()
         WeightMass.u2kg()
         WeightMass.kg2u()
     

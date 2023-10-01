@@ -217,14 +217,27 @@ from measureunit.units import WeightMass
 value = WeightMass.g2dag(2)
 ```
 
-**13. u2kg()** <br>
+**13. lb2oz()** <br>
+Pound (lb) to ounce (oz)
+```
+from measureunit.units import WeightMass
+value = WeightMass.lb2oz(2)
+```
+**14. oz2lb()** <br>
+Ounce (oz) to pound (lb)
+```
+from measureunit.units import WeightMass
+value = WeightMass.oz2lb(2)
+```
+
+**15. u2kg()** <br>
 Atomic mass unit (u) to kilogram (kg) <br>
 ```
 from measureunit.units import WeightMass
 value = WeightMass.u2kg(2)
 ```
 
-**14. kg2u()** <br>
+**16. kg2u()** <br>
 Kilogram (kg) to atomic mass unit (u) <br>
 ```
 from measureunit.units import WeightMass
