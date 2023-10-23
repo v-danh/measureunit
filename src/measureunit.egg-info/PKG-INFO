@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: measureunit
-Version: 0.0.2
+Version: 0.0.2.post0
 Summary: A Python library of the measurement conversion
 Home-page: https://github.com/v-danh/measureunit
 Author: v.d.anh
