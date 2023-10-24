@@ -492,11 +492,17 @@ class Temperature:
             logging.error(f'An error occurred: {e}. Please try again!')
     
 if __name__ == '__main__':
+    # logging.info(f'\nKilometer to meter (km -> m): {km2m(1)}')
+    # logging.info(f'\nMeter to kilometer (m -> km): {m2km(1)}')
+    # logging.info(f'\nHectometer to meter (hm -> m): {hm2m(1)}')
+    # logging.info(f'\nMeter to hectometer (km -> m): {m2hm(1)}')
+    # logging.info(f'\nInch to centimeter (inch -> cm): {inch2cm(1)}')
+    # logging.info(f'\nCentimeter to Inch (cm -> inch): {cm2inch(1)}')
+    
+    # logging.info(f'\nKilogram to gram (kg -> g): {kg2g(1)}')
+    # logging.info(f'\nGram to kilogram (g -> kg): {g2kg(2)}')
     value = Length.km2m(2)
     value
-    
-    value1 = Length.m2cm(2)
-    value1
     
     mass = WeightMass.t2kg(4)
     mass
