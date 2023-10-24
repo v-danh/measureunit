@@ -1,6 +1,6 @@
 from measureunit.units import Length, WeightMass, Temperature
 
-l1 = Length.km2m('')
+l1 = Length.km2m(2)
 l1
 
 w1 = WeightMass.t2kg(2)

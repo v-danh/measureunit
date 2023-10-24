@@ -1,6 +1,6 @@
 import logging
 logging.basicConfig(level=logging.INFO, 
-                    format=' %(asctime)s - %(levelname)s - %(message)s')
+                    format=' %(asctime)s | %(levelname)s | %(message)s')
 
 
 class Length:
@@ -24,7 +24,7 @@ class Length:
         if not isinstance(kilometer, (int, float)):
             raise ValueError("The value must be an integer.")
         else:
-            logging.info(meter)
+            return meter
     
     def m2km(meter: float):
         """
@@ -34,7 +34,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(kilometer)
+            return kilometer
     
     def km2hm(kilometer: float):
         """
@@ -44,7 +44,7 @@ class Length:
         if not isinstance(kilometer, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(hectometer)
+            return hectometer
     
     def hm2km(hectometer: float):
         """
@@ -54,7 +54,7 @@ class Length:
         if not isinstance(hectometer, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(kilometer)
+            return kilometer
     
     def km2dam(kilometer: float):
         """
@@ -64,7 +64,7 @@ class Length:
         if not isinstance(kilometer, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(decameter)
+            return decameter
     
     def dam2km(decameter: float):
         """
@@ -74,7 +74,7 @@ class Length:
         if not isinstance(decameter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(kilometer)
+            return kilometer
     
     def hm2m(hectometer: float):
         """
@@ -84,7 +84,7 @@ class Length:
         if not isinstance(hectometer, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(meter)
+            return meter
     
     def m2hm(meter: float):
         """
@@ -94,7 +94,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(hectometer)
+            return hectometer
     
     def dam2m(decameter: float):
         """
@@ -104,7 +104,7 @@ class Length:
         if not isinstance(decameter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(meter)
+            return meter
     
     def m2dam(meter: float):
         """
@@ -114,7 +114,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(decameter)
+            return decameter
     
     def m2dm(meter: float):
         """
@@ -124,7 +124,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(decimeter)
+            return decimeter
     
     def dm2m(decimeter: float):
         """
@@ -134,7 +134,7 @@ class Length:
         if not isinstance(decimeter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(meter)
+            return meter
     
     def m2cm(meter: float):
         """
@@ -144,7 +144,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(centimeter)
+            return centimeter
     
     def cm2m(centimeter: float):
         """
@@ -154,7 +154,7 @@ class Length:
         if not isinstance(centimeter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(meter)
+            return meter
     
     def m2mm(meter: float):
         """
@@ -164,7 +164,7 @@ class Length:
         if not isinstance(meter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(milimeter)
+            return milimeter
     
     def mm2m(milimeter: float):
         """
@@ -174,7 +174,7 @@ class Length:
         if not isinstance(milimeter, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(meter)
+            return meter
     
     def in2cm(inch: float):
         """
@@ -184,7 +184,7 @@ class Length:
         if not isinstance(inch, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(centimeter)
+            return centimeter
     
     def cm2in(centimeter: float):
         """
@@ -194,7 +194,7 @@ class Length:
         if not isinstance(inch, (int, float)):
             raise ValueError('The value must be an integer.')
         else:
-            logging.info(inch)
+            return inch
     
     def main():
         try:
@@ -234,161 +234,161 @@ class WeightMass:
         """
             Ton (t) to kilogram (kg)
         """
-        if isinstance(ton, (int, float)):
-            kilogram = ton * 1000
-            logging.info(kilogram)
-        else:
+        kilogram = ton * 1000
+        if not isinstance(ton, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            logging.info(kilogram)
     
     def kg2t(kilogram: float):
         """
             Kilogram (kg) to ton (t)
         """
-        if isinstance(kilogram, (int, float)):
-            ton = kilogram / 1000
-            logging.info(ton)
-        else:
+        ton = kilogram / 1000
+        if not isinstance(kilogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return ton
     
     def kg2g(kilogram: float):
         """
             Kilogram (kg) to gram (g)
         """
-        if isinstance(kilogram, (int, float)):
-            gram = kilogram * 1000
-            logging.info(gram)
-        else:
+        gram = kilogram * 1000
+        if not isinstance(kilogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return gram
     
     def g2kg(gram: float):
         """
             Gram (g) to kilogram (kg)
         """
-        if isinstance(gram, (int, float)):
-            kilogram = gram / 1000
-            logging.info(kilogram)
-        else:
+        kilogram = gram / 1000
+        if not isinstance(gram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return kilogram
     
     def kg2hg(kilogram: float):
         """
             Kilogram (kg) to hectogram (hg)
         """
-        if isinstance(kilogram, (int, float)):
-            hectogram = kilogram * 10
-            logging.info(hectogram)
-        else:
+        hectogram = kilogram * 10
+        if not isinstance(kilogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return hectogram
     
     def hg2kg(hectogram: float):
         """
             Hectogram (hg) to kilogram (kg)
         """
-        if isinstance(hectogram, (int, float)):
-            kilogram = hectogram / 10
-            logging.info(kilogram)
-        else:
+        kilogram = hectogram / 10
+        if not isinstance(hectogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return kilogram
     
     def kg2dag(kilogram: float):
         """
             Kilogram (kg) to dekagram (dag)
         """
-        if isinstance(kilogram, (int, float)):
-            dekagram = kilogram * 100
-            logging.info(dekagram)
-        else:
+        dekagram = kilogram * 100
+        if not isinstance(kilogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return dekagram
     
     def dag2kg(dekagram: float):
         """
             Dekagram (dag) to kilogram (kg)
         """
-        if isinstance(dekagram, (int, float)):
-            kilogram = dekagram / 100
-            logging.info(kilogram)
-        else:
+        kilogram = dekagram / 100
+        if not isinstance(dekagram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return kilogram
     
     def hg2g(hectogram: float):
         """
             Hectogram (hg) to gram (g)
         """
-        if isinstance(hectogram, (int, float)):
-            gram = hectogram * 100
-            logging.info(gram)
-        else:
+        gram = hectogram * 100
+        if not isinstance(hectogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return gram
     
     def g2hg(gram: float):
         """
             Gram (g) to hectogram (hg)
         """
-        if isinstance(gram, (int, float)):
-            hectogram = gram / 100
-            logging.info(hectogram)
-        else:
+        hectogram = gram / 100
+        if not isinstance(gram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return hectogram
     
     def dag2g(dekagram: float):
         """
             Dekagram (dag) to gram (g)
         """
-        if isinstance(dekagram, (int, float)):
-            gram = dekagram * 10
-            logging.info(gram)
-        else:
+        gram = dekagram * 10
+        if not isinstance(dekagram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return gram
     
     def g2dag(gram: float):
         """
             Gram (g) to dekagram (dag)
         """
-        if isinstance(gram, (int, float)):
-            dekagram = gram / 10
-            logging.info(dekagram)
-        else:
+        dekagram = gram / 10
+        if not isinstance(gram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return dekagram
     
     def lb2oz(pound: float):
         """
             Pound (lb) to ounce (oz)
         """
-        if isinstance(pound, (int, float)):
-            ounce = pound * 16
-            logging.info(ounce)
-        else:
+        ounce = pound * 16
+        if not isinstance(pound, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return ounce
     
     def oz2lb(ounce: float):
         """
             Ounce (oz) to pound (lb)
         """
-        if isinstance(ounce, (int, float)):
-            pound = ounce * 0.0625
-            logging.info(pound)
-        else:
+        pound = ounce * 0.0625
+        if not isinstance(ounce, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return pound
     
     def u2kg(u: float):
         """
             Atomic mass unit (u) to kilogram (kg)
         """
-        if isinstance(u, (int, float)):
-            kilogram = u * 1.6605402E-27
-            logging.info(kilogram)
+        kilogram = u * 1.6605402E-27
+        if not isinstance(u, (int, float)):
+            raise ValueError('The value must be an integer.')  
         else:
-            raise ValueError('The value must be an integer.')
+            return kilogram
     
     def kg2u(kilogram: float):
         """
             Kilogram (kg) to atomic mass unit (u)
         """
-        if isinstance(kilogram, (int, float)):
-            u = kilogram / 1.6605402E-27
-            logging.info(u)
-        else:
+        u = kilogram / 1.6605402E-27
+        if not isinstance(kilogram, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return u
     
     def main():
         try:
@@ -423,61 +423,61 @@ class Temperature:
         """
             Celsius (°C) to Fahrenheit (°F)
         """
-        if isinstance(celsius, (int, float)):
-            fahrenheit = (celsius * 9/5) + 32
-            logging.info(fahrenheit)
-        else:
+        fahrenheit = (celsius * 9/5) + 32
+        if not isinstance(celsius, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return fahrenheit
     
     def F2C(fahrenheit: float):
         """
             Fahrenheit (°F) to Celsius (°C)
         """
-        if isinstance(fahrenheit, (int, float)):
-            celsius = (fahrenheit - 32) * 5/9
-            logging.info(celsius)
-        else:
+        celsius = (fahrenheit - 32) * 5/9
+        if not isinstance(fahrenheit, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return celsius
     
     def C2K(celsius: float):
         """
             Celsius (°C) to Kelvin (K)
         """
-        if isinstance(celsius, (int, float)):
-            kelvin = celsius + 273.15
-            logging.info(kelvin)
-        else:
+        kelvin = celsius + 273.15
+        if not isinstance(celsius, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return kelvin
     
     def K2C(kelvin: float):
         """
             Kelvin (K) to Celsius (°C)
         """
-        if isinstance(kelvin, (int, float)):
-            celsius = kelvin - 273.15
-            logging.info(celsius)
-        else:
+        celsius = kelvin - 273.15
+        if not isinstance(kelvin, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return celsius
     
     def F2K(fahrenheit: float):
         """
             Fahrenheit (°F) to Kelvin (K)
         """
-        if isinstance(fahrenheit, (int, float)):
-            kelvin = ((fahrenheit - 32) * 5/9) + 273.15
-            logging.info(kelvin)
-        else:
+        kelvin = ((fahrenheit - 32) * 5/9) + 273.15
+        if not isinstance(fahrenheit, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return kelvin
     
     def K2F(kelvin: float):
         """
             Kelvin (K) to Fahrenheit (°F)
         """
-        if isinstance(kelvin, (int, float)):
-            fahrenheit = ((kelvin - 273.15) * 9/5) + 32
-            logging.info(fahrenheit)
-        else:
+        fahrenheit = ((kelvin - 273.15) * 9/5) + 32
+        if not isinstance(kelvin, (int, float)):
             raise ValueError('The value must be an integer.')
+        else:
+            return fahrenheit
     
     def main():
         try:
@@ -491,8 +491,5 @@ class Temperature:
             logging.error(f'An error occurred: {e}. Please try again!')
     
 if __name__ == '__main__':
-    value = Length.km2m(2)
-    value
-    
-    mass = WeightMass.t2kg(4)
-    mass
+    v = Length.km2m()
+    logging.info(f'The result of v = {v}')
