@@ -425,7 +425,7 @@ class Temperature:
             Celsius (°C) to Fahrenheit (°F)
         """
         fahrenheit = (celsius * 9/5) + 32
-        if isinstance(celsius, (int, float)):
+        if not isinstance(celsius, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return fahrenheit
@@ -435,7 +435,7 @@ class Temperature:
             Fahrenheit (°F) to Celsius (°C)
         """
         celsius = (fahrenheit - 32) * 5/9
-        if isinstance(fahrenheit, (int, float)):
+        if not isinstance(fahrenheit, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return celsius
@@ -445,7 +445,7 @@ class Temperature:
             Celsius (°C) to Kelvin (K)
         """
         kelvin = celsius + 273.15
-        if isinstance(celsius, (int, float)):
+        if not isinstance(celsius, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return kelvin
@@ -455,7 +455,7 @@ class Temperature:
             Kelvin (K) to Celsius (°C)
         """
         celsius = kelvin - 273.15
-        if isinstance(kelvin, (int, float)):
+        if not isinstance(kelvin, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return celsius
@@ -465,7 +465,7 @@ class Temperature:
             Fahrenheit (°F) to Kelvin (K)
         """
         kelvin = ((fahrenheit - 32) * 5/9) + 273.15
-        if isinstance(fahrenheit, (int, float)):
+        if not isinstance(fahrenheit, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return kelvin
@@ -475,12 +475,12 @@ class Temperature:
             Kelvin (K) to Fahrenheit (°F)
         """
         fahrenheit = ((kelvin - 273.15) * 9/5) + 32
-        if isinstance(kelvin, (int, float)):
+        if not isinstance(kelvin, (int, float)):
             raise ValueError('The value must be an integer')
         else:
             return fahrenheit
     
-    def main() -> None:
+    def main():
         try:
             Temperature.C2F()
             Temperature.F2C()
@@ -492,17 +492,8 @@ class Temperature:
             logging.error(f'An error occurred: {e}. Please try again!')
     
 if __name__ == '__main__':
-    # logging.info(f'\nKilometer to meter (km -> m): {km2m(1)}')
-    # logging.info(f'\nMeter to kilometer (m -> km): {m2km(1)}')
-    # logging.info(f'\nHectometer to meter (hm -> m): {hm2m(1)}')
-    # logging.info(f'\nMeter to hectometer (km -> m): {m2hm(1)}')
-    # logging.info(f'\nInch to centimeter (inch -> cm): {inch2cm(1)}')
-    # logging.info(f'\nCentimeter to Inch (cm -> inch): {cm2inch(1)}')
-    
-    # logging.info(f'\nKilogram to gram (kg -> g): {kg2g(1)}')
-    # logging.info(f'\nGram to kilogram (g -> kg): {g2kg(2)}')
     value = Length.km2m(2)
-    value
+    print(value)
     
     mass = WeightMass.t2kg(4)
-    mass
+    print(mass)
