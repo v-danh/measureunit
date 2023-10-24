@@ -5,7 +5,11 @@ with open('README.md', 'r') as f:
 
 setup(
     name='measureunit',
+<<<<<<< HEAD
     version='0.0.2.post0',
+=======
+    version='0.0.2r',
+>>>>>>> main
     description='A Python library of the measurement conversion',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
