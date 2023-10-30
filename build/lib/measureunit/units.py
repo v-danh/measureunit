@@ -438,7 +438,7 @@ class Temperature:
     
 def main():
     try:
-        value = Length.km2m()
+        value = Length.km2m(2)
         logging.info(f'The result of value: {value}')
         
         mass = WeightMass.t2kg(4)

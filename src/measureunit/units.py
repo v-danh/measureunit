@@ -1,8 +1,15 @@
 import logging
-logging.basicConfig(level=logging.INFO,
-                    format=' %(asctime)s:%(name)s | <%(levelname)s> | %(message)s',
-                    datefmt='%d/%m/%Y %H:%M:%S')
+# from colorama import init, Fore, Style
 
+logger = logging.getLogger(__name__)
+# init(autoreset=True)
+
+log_format = '%(asctime)s (%(filename)s:%(lineno)d:%(process)s) | <%(levelname)s> %(message)s'
+
+logging.basicConfig(level=logging.INFO,
+                    format=log_format,
+                    datefmt='%d/%m/%Y %H:%M:%S',
+                    handlers=[logging.StreamHandler()])
 
 class Length:
     """
@@ -438,15 +445,16 @@ class Temperature:
     
 def main():
     try:
-        value = Length.km2m()
+        value = Length.km2m(2)
         logging.info(f'The result of value: {value}')
         
         mass = WeightMass.t2kg(4)
         logging.info(f'The result of mass: {mass}')
+    
     except TypeError as e:
-        logging.exception(f'Caught an exception: {e}')
+        logging.error(f"Caught an exception due to {e}")
     except Exception as e:
-        logging.exception(f'An unexpected error occurred: {e}. Please try again!')
+        logging.error(f"An unexpected error occurred due to {e}. Please try again!")
     
 if __name__ == '__main__':
     main()
