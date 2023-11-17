@@ -1,12 +1,12 @@
 import logging
-logging.basicConfig(level=logging.INFO, 
-                    format=' %(asctime)s | <%(levelname)s> %(message)s',
-                    datefmt='%d/%m/%Y %H:%M:%S')
+# logging.basicConfig(level=logging.INFO, 
+#                     format=' %(asctime)s | <%(levelname)s> %(message)s',
+#                     datefmt='%d/%m/%Y %H:%M:%S')
 # import pytest
 from measureunit.units import Length, WeightMass, Temperature
 
 def test_km2m() -> None:
-    result = Length.km2m()
+    result = Length.km2m(2)
     logging.info(f'The result of value {result}')
     assert result == 2000
     
