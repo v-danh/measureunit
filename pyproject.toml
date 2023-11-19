@@ -1,4 +1,9 @@
+# pyproject.toml
+
 [build-system]
+name = "measurement"
+version = "0.0.2.post0"
+
 requires = [
     "setuptools",
     "wheel"
