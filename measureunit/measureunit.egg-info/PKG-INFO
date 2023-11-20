@@ -4,7 +4,9 @@ Version: 0.0.2.post0
 Summary: A Python library of the measurement conversion
 Home-page: https://github.com/v-danh/measureunit
 Author: v.d.anh
+Author-email: vdanhvt2000@gmail.com
 License: MIT
+Keywords: measureunit,conversion
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
@@ -266,42 +268,42 @@ value = WeightMass.kg2u(2)
 *Converting the measurement units of Temperature*
 
 **1. C2F()** <br>
-Celsius (Â°C) to Fahrenheit (Â°F) <br>
+Celsius (°C) to Fahrenheit (°F) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.C2F(20)
 ```
 
 **2. F2C()** <br>
-Fahrenheit (Â°F) to Celsius (Â°C) <br>
+Fahrenheit (°F) to Celsius (°C) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.F2C(80)
 ```
 
 **3. C2K()** <br>
-Celsius (Â°C) to Kelvin (K) <br>
+Celsius (°C) to Kelvin (K) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.C2K(20)
 ```
 
 **4. K2C()** <br>
-Kelvin (K) to Celsius (Â°C) <br>
+Kelvin (K) to Celsius (°C) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.K2C(20)
 ```
 
 **5. F2K()** <br>
-Fahrenheit (Â°F) to Kelvin (K) <br>
+Fahrenheit (°F) to Kelvin (K) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.F2K(20)
 ```
 
 **6. K2F()** <br>
-Kelvin (K) to Fahrenheit (Â°F) <br>
+Kelvin (K) to Fahrenheit (°F) <br>
 ```
 from measureunit.units import Temperature
 degree = Temperature.K2F(20)

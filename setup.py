@@ -1,19 +1,31 @@
+from pathlib import Path
 from setuptools import find_packages, setup
 
-with open('README.md', 'r') as f:
+
+def get_version():
+    versionpy = (Path('measureunit') / 'version.py').read_text()
+    locals_dict = {}
+    exec(versionpy, globals(), locals_dict)
+    return locals_dict['__version__']
+
+VERSION = get_version()
+
+with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name='measureunit',
-    version='0.0.2.post0',
+    version=VERSION,
     description='A Python library of the measurement conversion',
-    package_dir={'': 'measureunit'},
-    packages=find_packages(where='measureunit'),
+    # package_dir={'': 'measureunit'},
+    packages=find_packages(exclude=(['test*'])),
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/v-danh/measureunit',
     author='v.d.anh',
+    author_email='vdanhvt2000@gmail.com',
+    url='https://github.com/v-danh/measureunit',
     license='MIT',
+    keywords=['measureunit', 'conversion'],
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
