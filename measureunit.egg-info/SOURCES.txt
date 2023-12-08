@@ -22,8 +22,3 @@ measureunit/.src/test/test_units.py
 measureunit/__pycache__/__init__.cpython-311.pyc
 measureunit/__pycache__/units.cpython-311.pyc
 measureunit/__pycache__/version.cpython-311.pyc
-measureunit/measureunit.egg-info/PKG-INFO
-measureunit/measureunit.egg-info/SOURCES.txt
-measureunit/measureunit.egg-info/dependency_links.txt
-measureunit/measureunit.egg-info/requires.txt
-measureunit/measureunit.egg-info/top_level.txt
