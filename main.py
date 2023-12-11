@@ -11,7 +11,7 @@ try:
     mass = WeightMass.kg2g(4)
     logging.info(f'The result of the mass value: {mass}')
     
-    temp = Temperature.C2F('')
+    temp = Temperature.C2F(4)
     logging.info(f'The result of temp value: {temp}')
     
 except (ValueError, TypeError) as e:

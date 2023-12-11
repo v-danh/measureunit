@@ -17,7 +17,7 @@ setup(
     name='measureunit',
     version=VERSION,
     description='A Python library of the measurement conversion',
-    packages=find_packages(exclude=(['test*'])),
+    packages=find_packages(exclude=(['test*', 'dist*'])),
     include_package_data=True,
     long_description=long_description,
     long_description_content_type='text/markdown',
