@@ -10,9 +10,13 @@ logging.basicConfig(level=logging.INFO,
                     datefmt='%d/%m/%Y %H:%M:%S',
                     handlers=[logging.StreamHandler()])
 
+class InputTypeError(TypeError):
+    """Validating inappropriate input type"""
+    pass
+
 def validate_input(value, method_name):
     if not isinstance(value, (int, float)):
-        raise TypeError(f"the value of '{method_name}({value})' must be a numeric type (integer or float)")
+        raise InputTypeError(f"the value of '{method_name}({value})' must be a numeric type (integer or float)")
     else:
         return True
 
@@ -414,7 +418,7 @@ class Temperature:
 
 def main() -> None:
     try:
-        length = Length.km2m(2)
+        length = Length.km2m('')
         logging.info(f'The result of the length value: {length}')
         
         mass = WeightMass.kg2g(4)
