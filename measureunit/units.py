@@ -16,7 +16,7 @@ class InputTypeError(TypeError):
 
 def validate_input(value, method_name):
     if not isinstance(value, (int, float)):
-        raise InputTypeError(f"the value of '{method_name}({value})' must be a numeric type (integer or float)")
+        raise InputTypeError(f"'{method_name}({value})' must be a numeric type (integer or float)")
     else:
         return True
 
