@@ -363,9 +363,9 @@ class Temperature:
     """Converting the measurement units of Temperature"""
     
     __slots__ = ['Celsius', 'Fahrenheit', 'Kelvin']
-    Celsius:    int | float
-    Fahrenheit: int | float
-    Kelvin:     int | float
+    celsius:    int | float
+    fahrenheit: int | float
+    kelvin:     int | float
     
     @staticmethod
     def C2F(celsius: int | float) -> int | float:
@@ -373,6 +373,7 @@ class Temperature:
         Celsius (°C) to Fahrenheit (°F)
         """
         fahrenheit = (celsius * 9/5) + 32
+        validate_input(celsius, 'C2F')
         return fahrenheit
     
     @staticmethod
@@ -381,6 +382,7 @@ class Temperature:
         Fahrenheit (°F) to Celsius (°C)
         """
         celsius = (fahrenheit - 32) * 5/9
+        validate_input(fahrenheit, 'F2C')
         return celsius
     
     @staticmethod
@@ -389,6 +391,7 @@ class Temperature:
         Celsius (°C) to Kelvin (K)
         """
         kelvin = celsius + 273.15
+        validate_input(celsius, 'C2K')
         return kelvin
     
     @staticmethod
@@ -397,6 +400,7 @@ class Temperature:
         Kelvin (K) to Celsius (°C)
         """
         celsius = kelvin - 273.15
+        validate_input(kelvin, 'K2C')
         return celsius
     
     @staticmethod
@@ -405,6 +409,7 @@ class Temperature:
         Fahrenheit (°F) to Kelvin (K)
         """
         kelvin = ((fahrenheit - 32) * 5/9) + 273.15
+        validate_input(fahrenheit, 'F2K')
         return kelvin
     
     @staticmethod
@@ -413,6 +418,7 @@ class Temperature:
         Kelvin (K) to Fahrenheit (°F)
         """
         fahrenheit = ((kelvin - 273.15) * 9/5) + 32
+        validate_input(kelvin, 'K2F')
         return fahrenheit
     
 

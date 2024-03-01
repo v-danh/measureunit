@@ -3,6 +3,7 @@ from setuptools import find_packages, setup
 
 
 def get_version():
+    """Get verion of package"""
     versionpy = (Path('measureunit') / 'version.py').read_text()
     locals_dict = {}
     exec(versionpy, globals(), locals_dict)
