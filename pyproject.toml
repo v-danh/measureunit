@@ -1,10 +1,15 @@
 # pyproject.toml
 
-[build-system]
-requires = [
-    "setuptools",
-    "wheel",
-    "setuptools_scm"
-]
+[[package]]
+name = "measureunit"
+version = "0.0.3"
+description = "A Python library of the measurement conversion."
+authors = ["vdanh <vdanhvt2000@gmail.com>"]
+readme = "README.md"
 
+[package.dependencies]
+rich = ">=13.9.2"
+
+[build-system]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"

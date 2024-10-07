@@ -2,7 +2,7 @@ from measureunit.units import Length, WeightMass, Temperature
 import measureunit as msu
 import logging
 
-# print(msu.__version__)
+print(msu.__version__)
 
 try:
     length = Length.km2m(2)
